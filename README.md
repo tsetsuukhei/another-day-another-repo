@@ -50,17 +50,17 @@ Make sure you have installed the following applications on your development mach
   ```
   vi ~/.zprofile
   ```
-Press **i** to insert
+  Press **i** to insert
 
   ```
   export PAT=<your PAT>
   ```
 
-Press **esc** to stop inserting
+  Press **esc** to stop inserting
 
-Press **shift+q** to exit
+  Press **shift+q** to exit
 
-Type in **wq** to save or !q to not save 
+  Type in **wq** to save or !q to not save 
 
 2. Check your PAT
 
@@ -68,11 +68,11 @@ Type in **wq** to save or !q to not save
   echo $PAT
   ```
   
-If it prints your PAT, you have successfully exported your PAT.
+  If it prints your PAT, you have successfully exported your PAT.
   
 ## Login with Docker
 
-Type in the following command on your terminal
+  Type in the following command on your terminal
 
   ```
   echo $PAT | docker login ghcr.io --<username> phanatic --password-stdin
@@ -82,9 +82,9 @@ Type in the following command on your terminal
 
 1. Create a new folder on your computer and download the following files into the folder
  
-[Download docker-compose.yml](https://drive.google.com/file/d/1TqsxFnW-t2mMnvF6OpqPhDw4wuuRz7Tp/view?usp=sharing)
+  [Download docker-compose.yml](https://drive.google.com/file/d/1TqsxFnW-t2mMnvF6OpqPhDw4wuuRz7Tp/view?usp=sharing)
 
-[Download nginx.conf](https://drive.google.com/file/d/106KN2EVwn780wVUK-e8PrAuEtye-9kew/view?usp=sharing)
+  [Download nginx.conf](https://drive.google.com/file/d/106KN2EVwn780wVUK-e8PrAuEtye-9kew/view?usp=sharing)
 
 
 2. Open up your terminal and go to your working directory where you downloaded the files.
