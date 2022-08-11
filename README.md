@@ -80,9 +80,12 @@ Type in the following command on your terminal
 
 ## Compose with Docker
 
-1. Create a new folder and download the following files into the folder
-[Download docker-compose.yml](https://github.com/tsetsuukhei/another-day-another-repo/blob/master/docker-compose.yml)
-[Download nginx.conf](https://github.com/tsetsuukhei/another-day-another-repo/blob/master/nginx.conf)
+1. Create a new folder on your computer and download the following files into the folder
+2. 
+[Download docker-compose.yml](https://drive.google.com/file/d/1TqsxFnW-t2mMnvF6OpqPhDw4wuuRz7Tp/view?usp=sharing)
+
+[Download nginx.conf](https://drive.google.com/file/d/106KN2EVwn780wVUK-e8PrAuEtye-9kew/view?usp=sharing)
+
 
 2. Open up your terminal and go to your working directory where you downloaded the files.
 
