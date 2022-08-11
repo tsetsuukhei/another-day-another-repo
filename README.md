@@ -71,7 +71,11 @@ Type in **wq** to save or !q to not save
   
   ```
   
+If it prints your PAT, you have successfully exported your PAT.
+  
 ## Login with Docker
+
+Type in the following command on your terminal
 
   ```
   echo $PAT | docker login ghcr.io --<username> phanatic --password-stdin
