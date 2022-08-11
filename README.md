@@ -74,6 +74,6 @@ Type in **wq** to save or !q to not save
 ## Login with Docker
 
   ```
-  docker login ghcr.io --<username> phanatic --password-stdin
+  echo $PAT | docker login ghcr.io --<username> phanatic --password-stdin
   
   ```
