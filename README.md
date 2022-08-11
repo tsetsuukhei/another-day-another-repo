@@ -81,7 +81,7 @@ Type in the following command on your terminal
 ## Compose with Docker
 
 1. Create a new folder on your computer and download the following files into the folder
-2. 
+ 
 [Download docker-compose.yml](https://drive.google.com/file/d/1TqsxFnW-t2mMnvF6OpqPhDw4wuuRz7Tp/view?usp=sharing)
 
 [Download nginx.conf](https://drive.google.com/file/d/106KN2EVwn780wVUK-e8PrAuEtye-9kew/view?usp=sharing)
