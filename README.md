@@ -81,3 +81,8 @@ Type in the following command on your terminal
   echo $PAT | docker login ghcr.io --<username> phanatic --password-stdin
   
   ```
+
+## Compose with Docker
+
+1. Create a new folder and download the following files
+
