@@ -49,13 +49,11 @@ Make sure you have installed the following applications on your development mach
 
   ```
   vi ~/.zprofile
-  
   ```
 Press **i** to insert
 
   ```
   export PAT=<your PAT>
-  
   ```
 
 Press **esc** to stop inserting
@@ -68,7 +66,6 @@ Type in **wq** to save or !q to not save
 
   ```
   echo $PAT
-  
   ```
   
 If it prints your PAT, you have successfully exported your PAT.
@@ -79,10 +76,19 @@ Type in the following command on your terminal
 
   ```
   echo $PAT | docker login ghcr.io --<username> phanatic --password-stdin
-  
   ```
 
 ## Compose with Docker
 
-1. Create a new folder and download the following files
+1. Create a new folder and download the following files into the folder
+[Download docker-compose.yml](https://github.com/tsetsuukhei/another-day-another-repo/blob/master/docker-compose.yml)
+[Download nginx.conf](https://github.com/tsetsuukhei/another-day-another-repo/blob/master/nginx.conf)
+
+2. Open up your terminal and go to your working directory where you downloaded the files.
+
+3. Type in the following commands
+
+  ```
+  docker compose up
+  ```
 
