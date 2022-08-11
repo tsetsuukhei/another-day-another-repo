@@ -1,0 +1,29 @@
+services:
+  postgres-db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=FBF6LT7yPSWbZnm3
+      - POSTGRES_DB=auth
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      #- ./data:/var/lib/postgresql/data:rw # local path
+      - aircampi-db:/var/lib/postgresql/data:rw # shared volume
+    ports:
+      - 5432
+  auth-api:
+    image: ghcr.io/aircampi/auth-api:nightly
+    environment:
+      - AUTH_DATABASE_URL=postgres://postgres:FBF6LT7yPSWbZnm3@postgres-db:5432/auth
+      - DATABASE_URL=postgres://postgres:FBF6LT7yPSWbZnm3@postgres-db:5432/auth
+    ports:
+      - 8536
+  web:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+    - "8536:80"
+    command: [nginx-debug, '-g', 'daemon off;']
+volumes:
+  aircampi-db:
+    #external: true # use before created external volume
